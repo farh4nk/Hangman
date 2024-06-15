@@ -15,7 +15,7 @@ def run():
     for letter in word:
         letters.append(letter)
         display.append("_")
-    print(display)
+    print("".join(display))
     while current_turn < tries:
         guess = input("Guess a letter: ")
         if guess in letters:
@@ -24,7 +24,7 @@ def run():
                 if guess == letter:
                     display[i] = guess
                     used_letters.append(guess)
-            print(display)
+            print("".join(display))
             # win condition
             if display == letters:
                 print(f"nice job. The word was {word.upper()}")
