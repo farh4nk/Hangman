@@ -14,7 +14,7 @@ def run():
     used_letters = []
     for letter in word:
         letters.append(letter)
-        display.append("_")
+        display.append("_ ")
     print("".join(display))
     while current_turn < tries:
         guess = input("Guess a letter: ")
